@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <title>Flex-Box</title>
+</head>
+
+<body>
+    <!--$ Texto Flex-Box  -->
+    <section>
+        <div class="txt">
+            <center>
+                <h1>Flex-Box</h1>
+            </center>
+            <img src="../img/flex-axes.png" alt="" width="600px"> <br>
+            <p>Flexbos requiere de dos cosas <strong>flex-container</strong> y <strong>flex-item.</strong> </p>
+            <p><strong>flex-container:</strong> Simplemente es el contenedor(div).</p>
+            <p><strong>flex-item:</strong> Son lo elementos que se encunetran dentro del contenedor (b, p, img, etc).
+            </p>
+        </div>
+    </section>
+    <section>
+        <!--$ Dsiplay: flex; -->
+        <div class="cont">
+            <h2>Display: flex;</h2>
+            <div class="flex-container-1">
+                <div class="flex-item-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iusto cum laudantium animi qui
+                        ab, suscipit, voluptatem perspiciatis quo consequuntur aperiam illum impedit quasi earum, cumque
+                        sunt! Nobis, esse distinctio.</p>
+                </div>
+                <div class="flex-item-1">
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sunt quis aut aliquam ipsam, ea
+                        culpa perferendis repudiandae nobis dignissimos, numquam qui accusamus eaque nisi praesentium
+                        iure. Eaque, sequi voluptatibus.
+                        Doloremque distinctio quaerat perferendis quisquam necessitatibus sapiente autem non obcaecati
+                        quia sequi vero nihil, cupiditate placeat delectus fuga tempora! Labore id voluptatibus
+                        consequatur aliquid temporibus nisi animi voluptatum alias sapiente.
+                        Nihil beatae tempore fugit provident corporis, dolore asperiores amet vitae laudantium
+                        laboriosam quis libero suscipit placeat dignissimos similique possimus rem odit inventore
+                        commodi nemo harum. Quod vitae placeat architecto illo? </p>
+                </div>
+            </div>
+        </div>
+        <!--$ Propiedades: contenedor-->
+        <div class="cont">
+            <center>
+                <h2>Propiedades: (contenedor)</h2>
+            </center>
+            <br>
+            <section>
+                <!--! Flex-Direction -->
+                <h2>flex-direction: [row, column, row-reverse, column-reverse]</h2>
+                <div class="flex-container-1">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                </div>
+            </section>
+            <section>
+                <!--! Flex-Wrap -->
+                <h2>flex-wrap: [wrap, nowrap];</h2>
+                <p>ESta propiedad lo que hace es que al hacer mas chica la pantalla los elementos se bakan uno por uno
+                    sin perder su tamaño.</p>
+                <div class="flex-wrap">
+                    <div class="flex-item org">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                </div>
+            </section>
+            <section>
+                <!--! Flex-Flow -->
+                <h2>Flex-Flow</h2>
+                <p>Flex-flow se puede utilizar para abreviar <b>flex-direction & flex-wrap:</b></p>
+                <pre>
+.flex-flow{
+display: flex;
+flex-flow: row-reverse wrap;
+}
+            </pre>
+                <div class="flex-flow">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                </div>
+            </section>
+            <section>
+                <!--! Justify-Content -->
+                <h1>Justify-Content</h1>
+                <p><b>Justify-Content</b> sirve para centrar los elementos(items) del contenedor. el valor
+                    <b>space-around</b> esta muy bueno para esparcir las cajas de manera que todas tengan el mismo
+                    espacio de separacion como en el siguiente ejemplo y agregar <b>flex-wrap: wrap;</b> para que a la
+                    hora de hacerlo más pequeño este no se deforme</p>
+                <div class="just-content">
+                    <div class="flex-item org">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                </div>
+            </section>
+            <section>
+                <!--! Align-items -->
+                <h2>Align-Item & align-content</h2>
+                <p><b>align-item:</b> se utiliza para cuando solo hay una linea de items</p>
+                <p><b>align-content:</b> se utiliza para cuando solo hay mas de una linea de items</p>
+                <p>Ejemplo align-item</p>
+                <div class="align-item">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                    <div class="flex-item">7</div>
+
+                </div>
+                <!-- <p>Ejemplo align-content</p>
+                <div class="align-content">
+                    <div class="flex-item">1</div>
+                    <div class="flex-item">2</div>
+                    <div class="flex-item">3</div>
+                    <div class="flex-item">4</div>
+                    <div class="flex-item">5</div>
+                    <div class="flex-item">6</div>
+                </div> -->
+            </section>
+        </div>
+    </section>
+    <!--$ propiedades: (items)   -->
+    <section>
+        <div class="cont">
+            <center>
+                <h2>propiedades: (items)</h2>
+            </center>
+            <h2>align-self</h2>
+            <p>align-self: [flex-start, flex-end, center, baseline, stretch] <br> sirve para poscionoar un solo
+                elemento(item) </p>
+            <div class="flex-contenedor">
+                <div class="flex-iteem orange">1</div>
+                <div class="flex-iteem">2</div>
+                <div class="flex-iteem">3</div>
+                <div class="flex-iteem">4</div>
+                <div class="flex-iteem">5</div>
+                <div class="flex-iteem green">6</div>
+            </div>
+        </div>
+    </section>
+    <!--$ Flex-grow  -->
+    <section>
+        <div class="cont">
+            <h2>flex-grow:</h2>
+            <p>Agarra el espacio sobrante y lo reparte entre los elementos</p>
+            <div class="flex-contenedor-grow">
+                <div class="flex-iteem orangee">1</div>
+                <div class="flex-iteem greenn">2</div>
+                <div class="flex-iteem pinkk">3</div>
+            </div>
+        </div>
+    </section>
+    <!--$ Flex-basis  -->
+    <section>
+        <div class="cont">
+            <h2>flex-basis:</h2>
+            <p>Establece la longitud inicial del elemento (item) y tiene un nivel mayor al de width</p>
+            <div class="flex-contenedor-basis">
+                <div class="flex-iteem-basis orange-basis">Esta caja tiene un flex-baisis de 300px</div>
+                <div class="flex-iteem-basis green-basis">Esta caja tiene un width de 130 px</div>
+                <div class="flex-iteem-basis pink-basis">Esta caja tiene un width de 130 px</div>
+            </div>
+        </div>
+    </section>
+    <!--$ Flex-Shrink  -->
+    <section>
+        <div class="cont">
+            <h2>flex-Shrink:</h2>
+            <p>El elemento que tiene esta propiedad sede máyor espacio que las otras.</p>
+            <div class="flex-contenedor-s">
+                <div class="flex-iteem-s orange-s">Esta caja va a seder la mitad de su espacio</div>
+                <div class="flex-iteem-s green-s">Esta caja tiene un width de 130 px</div>
+                <div class="flex-iteem-s pink-s">Esta caja tiene un width de 130 px</div>
+            </div>
+        </div>
+    </section>
+    <!--$ Flex -->
+    <section>
+        <div class="cont">
+            <h2>Flex</h2>
+            Lo que hace flex es integrar <b>flex-grow, flex-basis, flex-shrink</b>
+        </div>
+    </section>
+
+    <!--$ Ejercisio: -->
+    <section>
+        <div class="cont">
+            <h2>Ejemplo:</h2>
+            <a href="Example/index.html">Ejemplo</a>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

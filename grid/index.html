@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Grid</title>
+</head>
+
+<body>
+    <div class="titular">
+        <center>
+            <h1>CSS Grid</h1>
+        </center>
+    </div>
+    <!--$ ##################################################### Conceptos - Grid ###################################################### -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Conceptos-Grid</h2>
+            </center>
+            <h3>Grid Container:</h3>
+            <p>
+                Es similar al de felxbox, es el contenedor principal, en la imagen de
+                abajo se observa con un borde de color
+                <b style="color: green;">verde</b>
+            </p>
+            <h3>Grid item:</h3>
+            <p>Son los elementos hijos directos del container</p>
+            <center><img src="img/grid.png" alt="" width="400px" style="margin-bottom: 25px;" /></center>
+
+            <h3>Grid Cell:</h3>
+            <p>Son las celdas, son elementos representativos dentro del container(no es lo mismo que un <b>grid-item</b>
+                )</p>
+            <h3>Grid Tracks: (column $ row)</h3>
+            <p>Son las columnas y las filas dentro del container.</p>
+            <h3>Grid Area:</h3>
+            <p>Son area que seleccionamos del contenedor</p>
+            <h3 id="grid-line">Grid Line:</h3>
+            <p>Son las lineas divisoras de las celdas.</p> <br>
+            <center><img src="img/diagrama-css-grid.jpg" alt="" width="500px"></center>
+        </div>
+    </section>
+    <!--$ ##################################################### Display - Grid & Template ############################################# -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Display Grid / Grid Templates</h2>
+            </center>
+            <h3>Displya: grid;</h3>
+            <p>Cuando le colocamos al contenedor <b>display:grid; </b> lo unico que hacemos es que cree filas.</p>
+            <h3>Medidas</h3>
+            <p>Las medidas que recibe pueden ser en <b>pixeles (px),</b> <b>em,</b> y la espcial que es <b>fr</b>, esta
+                medida lo que hace es tomar el ancho total disponible</p>
+            <h3>grid-template-rows:</h3>
+            <p>[de acuerdo a las filas que quieramos se llenan los valores ya sea con px, em, o fr] </p>
+            <h3>grid-template-columns:</h3>
+            <p>[de acuerdo a las columnas que quieramos se llenan los valores ya sea con px, em, o fr]</p>
+            <code class="code">
+                grid-template-rows: 100px 100px 100px; <br>
+                grid-template-columns: 100px 100fr 100fr;
+            </code>
+            <div class="grid-container">
+                <div class="grid-item">aqui hay 150 px</div>
+                <div class="grid-item">medida con fr</div>
+                <div class="grid-item">medida con fr</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </section>
+    <!--$ ###################################################### Grid - Gap ########################################################### -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Grid - Gap</h2>
+            </center>
+            <h3>Grid - Gap</h3>
+            <p>El grid gap: es una espacie de margin entre celdas</p>
+            <div class="grid-container-gap">
+                <div class="grid-item">aqui hay 150 px</div>
+                <div class="grid-item">medida con fr</div>
+                <div class="grid-item">medida con fr</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </section>
+    <!--$ #####################################################  Asignación de Espacios  ############################################## -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Asignación de Espacios</h2>
+            </center>
+            <h3>Grid row</h3>
+            <p>[inicio grid-line / fin de la grid-line]</p> -> enfocado a filas
+            <h3>Grid Column</h3>
+            <p>[inicio grid-line / fin de la grid-line]</p> -> enfocado a columnas<br> <br>
+            <b>En el ejemplo de abajo estamos asignandole al recuadro rojo un espacio desde la linea 1 hasta la 3</b>
+            para una mejor comprension revisar <a href="#grid-line">grid-line</a>
+            <div class="grid-container-1">
+                <div class="grid-item-1">1</div>
+                <div class="grid-item-1">2</div>
+                <div class="grid-item-1">3</div>
+                <div class="grid-item-1">4</div>
+                <div class="grid-item-1">5</div>
+                <div class="grid-item-1">6</div>
+                <div class="grid-item-1">7</div>
+                <div class="grid-item-1">8</div>
+                <div class="grid-item-1">9</div>
+            </div>
+        </div>
+    </section>
+    <!--$ #####################################################  repeat  ##################################################### -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Repeat()</h2>
+            </center>
+            <h3>repeat()</h3>
+            <p>la función repeat(*fila/columna*, *tamaño*) recibe un parametro ya sea para columnas o filas y el tamaño
+                que se le va a dar a esa columna o fila </p>
+            <div class="container-repeat">
+                <div class="item-r">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis adipisci inventore
+                    suscipit architecto eveniet dolor vitae rerum quas eligendi ullam atque molestiae autem ipsa, quo
+                    alias ab. Maiores, quam laudantium.</div>
+                <div class="item-r">2</div>
+                <div class="item-r">3</div>
+                <div class="item-r">4</div>
+                <div class="item-r">5</div>
+                <div class="item-r">6</div>
+                <div class="item-r">7</div>
+                <div class="item-r">8</div>
+                <div class="item-r">9</div>
+                <div class="item-r">10</div>
+                <div class="item-r">11</div>
+                <div class="item-r">12</div>
+                <div class="item-r">13</div>
+                <div class="item-r">14</div>
+                <div class="item-r">15</div>
+            </div>
+        </div>
+    </section>
+    <!--$ #####################################################  Grid implicito y explicito  ##################################################### -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Grid auto</h2>
+            </center>
+            <h3>grid implicito</h3>
+            <img src="img/implicit.jpg" alt="">
+            <h3>grid explicito</h3>
+            <img src="img/explicit.jpg" alt="">
+            <h3>grid-auto</h3>
+            <p>recibe 3 propiedades.</p> <br>
+            <h4>grid-auto-rows:</h4>
+            <p>repeat(filas, tamaño)</p>
+            <h4>grid-auto-columns:</h4>
+            <p>repeat(filas, tamaño)</p>
+            <h4>grid-auto-flow:</h4>
+            <p> px, fr, em <b style="color: red;">el valor "dense" ayuda a rellener los huecos vacios.</b></p>
+            <div class="grid-container-a">
+                <div class="item-a">1</div>
+                <div class="item-a">2</div>
+                <div class="item-a">3</div>
+                <div class="item-a">4</div>
+                <div class="item-a">5</div>
+                <div class="item-a">6</div>
+                <div class="item-a">7</div>
+                <div class="item-a">8</div>
+                <div class="item-a">9</div>
+                <div class="item-a">10</div>
+                <div class="item-a">11</div>
+                <div class="item-a">12</div>
+                <div class="item-a">13</div>
+                <div class="item-a">14</div>
+                <div class="item-a">15</div>
+            </div>
+
+        </div>
+    </section>
+    <!--$ #####################################################  -  ##################################################### -->
+    <!-- <section>
+        <div class="panel">
+            <center><h2>Titulo</h2></center>
+            <h3>Subtitulo</h3>
+        </div>
+    </section> -->
+    <!--$ #####################################################  -  ##################################################### -->
+    <!-- <section>
+        <div class="panel">
+            <center><h2>Titulo</h2></center>
+            <h3>Subtitulo</h3>
+        </div>
+    </section> -->
+</body>
+
+</html>

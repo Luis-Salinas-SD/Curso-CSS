@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.code{
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #538fff;
+    background: hsl(220, 13%, 18%);
+    width: 25%;
+    margin: 15px;
+}
+body{
+    background: #17202A;
+    color: #FBFCFC;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    color: #E74C3C;
+    margin-bottom: 7px;
+}
+p{
+    color: #1C2833;
+}
+.titular{
+    background: #58D68D;
+    opacity: .8;
+}
+.panel{
+    background: #F39C12;
+    margin: 15px 30px;
+    padding: 15px;
+    opacity: .9;
+}
+
+/*$ ##################################################### Display - Grid & template ##################################################### */
+.grid-container{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100fr 100fr;
+}
+.grid-item{
+    border: 2px solid white;
+}
+/*$ ##################################################### Display - Grid & template ##################################################### */
+
+.grid-container-gap{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100fr 100fr;
+    grid-gap: 10px;
+    border: 1px solid black;
+}
+.grid-item{
+    border: 2px solid white;
+}
+/*$ ##################################################### Asignacion de Espacio ##################################################### */
+.grid-container-1{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    border: 1px solid black;
+}
+.grid-item-1{
+    border: 2px solid white;
+}
+.grid-item-1:first-child{
+    background: brown;
+    grid-column: 1/span 2;
+    grid-row: 1/ span 1;
+}
+/*#Para seleccion un elemento utilizamos :nth-child(*elemento*) */
+.grid-item-1:nth-child(2){
+    background: green;
+}
+.grid-item-1:nth-child(3){
+    background: pink;
+}
+.grid-item-1:nth-child(9){
+    background: black;
+}
+/*$ ##########################################################  repeat()  ######################################################### */
+.container-repeat{
+    margin: 20px;
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.item-r{
+    border: 1px solid green;
+}
+
+/*$ ##########################################################  grid-auto  ######################################################### */
+.grid-container-a{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+}
+.item-a{
+    border: 2px solid black;
+}

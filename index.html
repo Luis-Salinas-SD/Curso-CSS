@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
+	<title>Curso-CSS</title>
+</head>
+
+<body>
+	<center><a href="flex-box/index.html">CSS - Flex-Box</a></center>
+	<center><a href="grid/index.html">CSS - Grid </a></center>
+	<center><a href="menu-responsive/index.html">Menu-Responsive- no terminado</a></center>
+	<script src="ind.js"></script>
+	<h1 style="text-align: center;">Curso CSS</h1>
+	<!--! ############################################################### Seccion del texto ######################################################## -->
+	<section>
+		<div class="content">
+			<h1 style="text-align: center;">Texto</h1>
+			<h2>Font-Size:</h2>
+			<p>Tamaño de la letra, recibe como parametros [px, em, %]</p>
+			<h2>Font-Family</h2>
+			<p>Es la tipografia de la letra</p>
+			<h2>Font-weight</h2>
+			<p>font-weight: bold; //se utiliza para agregar negritas</p>
+			<h2>Font-style:</h2>
+			<p>
+				font-style: oblique; //indicica si el fondo esta en cursiva recibe
+				tres valores [italic, oblique]
+			</p>
+		</div>
+	</section>
+	<!--! ############################################################## Box Model ################################################################# -->
+	<section>
+		<div class="content">
+			<h1 style="text-align: center;">Box Model</h1>
+			<p>
+				El Box Model está conformado por content, padding, border y margin.
+			</p>
+			<center>
+				<img src="img/box-model.png" alt="Box-Model" width="450px" height="350px" />
+			</center>
+			<p>
+				Todas las propiedas reciben su valor de la misma manera: <br />
+				[margin: top right bottom left;]<br />
+				<strong>margin: 10px 10px 10px 10px;</strong> <br />
+				<strong>padding: 10px 10px 10px 10px;</strong><br />
+			</p>
+			<div class="box-model">
+				Contenido de la caja
+			</div>
+			<div class="box-model">
+				Contenido de la caja
+			</div>
+		</div>
+	</section>
+	<!--! ############################################################ Metodología BEM ############################################################# -->
+	<section>
+		<div class="content">
+			<fieldset class="field">
+				<div class="contact-form">
+					<h1 style="text-align: center;">Metodología BEM</h1>
+					Nombre:<input type="text" class="contact-form__input--active" /><br />
+					Apellido:<input type="text" class="contact-form__input" /><br />
+					Contraseña:<input type="password" class="contact-form__input" /><br />
+				</div>
+			</fieldset>
+		</div>
+	</section>
+
+	<!--! ########################################################### Posicionamiento ############################################################## -->
+	<section>
+		<div class="content">
+			<h1 style="text-align: center;">Posicionamiento</h1>
+			<h3>position: relative;</h3>
+			<p>
+				Cuando agregamos <strong>position: relative</strong>, este elemento
+				obtiene nuevos valores de posicionamiento para top, bot, right y left
+			</p>
+			<div class="relative">
+				<div class="caja1">Caja 1</div>
+				<div class="caja2">Caja 2</div>
+				<div class="caja3">Caja 3</div>
+				<div class="caja4">Caja 4</div>
+				<div class="caja5">Caja 5</div>
+			</div>
+			<h3>position: absolute;</h3>
+			<p>
+				Cuando agregamos <strong>position: absolute</strong>, pone el elemento
+				en cualquier parte que sea poscionado por el viewport, por ejemplo si
+				posisionamos el elemtno (caja 4) con top:0 y left:0 lo posicionara en
+				la esquina superior izquierda
+			</p>
+			<div class="absolute">
+				<div class="caja1-a">Caja 1</div>
+				<div class="caja2-a">Caja 2</div>
+				<div class="caja3-a">Caja 3</div>
+				<div class="caja4-a">Caja 4 con propiedad absolute</div>
+				<div class="caja5-a">Caja 5</div>
+			</div>
+			<h3>position: fixed; & sticky</h3>
+			<p>
+				Cuando agregamos <strong>position: fixed</strong>, simplemente fijamos
+				el elemento en pantalla y no se mueve por mas que hagamos scroll es
+				ideal para los nav
+			</p>
+			<div class="fixed">
+				<!-- <div class="caja1-f">Caja 1 con propiedad fixed</div>
+			<div class="caja2-f">Caja 2 con sticky</div> -->
+				<div class="caja3-f">Caja 3</div>
+				<div class="caja4-f">Caja 4</div>
+				<div class="caja5-f">Caja 5</div>
+			</div>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quia
+			assumenda quae voluptates adipisci asperiores numquam sequi cum,
+			aspernatur, quidem incidunt officiis repudiandae provident officia ea
+			sint porro illo corrupti. Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Ipsum, adipisci corrupti. Odit laboriosam sed
+			architecto aliquam harum nisi rerum aperiam, amet sit quisquam
+			repellendus officiis fuga in aliquid, nemo voluptate? Lorem ipsum dolor
+			sit amet consectetur adipisicing elit. Rem rerum, pariatur ratione
+			assumenda eaque perspiciatis voluptas soluta esse aliquid totam non
+			natus! Suscipit nesciunt facilis tempore ipsum quis iusto. Voluptatum.
+		</div>
+	</section>
+
+	<!--! ############################################################### Display ################################################################## -->
+
+	<section>
+		<div class="content">
+			<h1 style="text-align: center;">Display</h1>
+			<h2>display: block;</h2>
+			<p>
+				Esta propiedad lo que hace es decirle al elemento que se comoporte
+				como un elemento en bloque, o sea que ocupe todo el ancho del
+				viewport.
+			</p>
+			<center>
+				<img src="img/display-block.png" alt="" width="500px" />
+			</center>
+			<h2>display: inline;</h2>
+			<p>
+				Esta propiedad lo que hace es que el elemento lo toma en linea, lo que
+				quiere decir que el ancho lo toma de acuerdo al contenido del elemento
+				y no se puede modificar el ancho y el alto.
+			</p>
+			<div class="display">item 1 con un display inlie</div>
+			<div class="display">item 2</div>
+			<div class="display">item 3</div>
+			<div class="display">item 4</div>
+			<h2>display: inline-block</h2>
+			<p>
+				Esta propiedad hace lo mismo que <strong>inline</strong> a diferencia
+				que esta si permite modificar el ancho y el alto
+			</p>
+			<center>
+				<img src="img/display-inline-block.png" alt="" width="700px" />
+			</center>
+		</div>
+	</section>
+
+	<!--! ################################################################# Overflow ############################################################### -->
+	<section>
+		<div class="content">
+			<center>
+				<h1>overflow</h1>
+			</center>
+			<h2>overflow: [auto, hidden, scroll]</h2>
+			<p>
+				Esta propiedad lo que hace es que el texto que se sale del elemento lo
+				pone dentro con una barra de navegacion recibe 3 parametros
+				<strong>auto, hidden, scroll</strong>
+			</p>
+			<h2>overflow: auto</h2>
+			Genera un scroll
+			<div class="overflow auto">
+				Hola Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+				delectus nesciunt corporis, nam fugit ipsum nihil esse nisi, similique
+				nobis sunt commodi numquam voluptatum! Molestias nulla quae provident
+				illo incidunt.
+			</div>
+			<h2>overflow: hidden</h2>
+			El hidden solo oculta el texto sobrante
+			<div class="overflow hidden">
+				Hola Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+				delectus nesciunt corporis, nam fugit ipsum nihil esse nisi, similique
+				nobis sunt commodi numquam voluptatum! Molestias nulla quae provident
+				illo incidunt.
+			</div>
+			<h2>overflow: scroll</h2>
+			scrooll coloca una barra de navegacion en el eje "x y "Y"
+			<div class="overflow scroll">
+				Hola Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+				delectus nesciunt corporis, nam fugit ipsum nihil esse nisi, similique
+				nobis sunt commodi numquam voluptatum! Molestias nulla quae provident
+				illo incidunt.
+			</div>
+		</div>
+	</section>
+	<!--! ################################################################### Float ################################################################ -->
+	<section>
+		<div class="content">
+			<center>
+				<h1>Float</h1>
+			</center>
+			<h2>float: [left, right] ;</h2>
+			<p>especifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su
+				contenedor, donde los elementos de texto y los en línea aparecerán a su alrededor.</p>
+			<center>
+				<div class="cont" style="text-align: justify;"">
+				<img src=" img/example.png" alt="" width="200px">
+					<p>El kraken es una enorme y colosal criatura marina de la mitología escandinava descrita comúnmente
+						como un tipo de pulpo o calamar gigante o medusa que, emergiendo de las profundidades, atacaba
+						barcos y devoraba a los marineros. El mito puede realmente haberse originado en avistamientos de
+						calamares gigantes reales que estimadamente tendrían de 33 a 45 metros de largo, incluyendo las
+						8
+						patas con tentáculos. Se podría decir que es aún más grande que el megalodon.</p>
+				</div>
+			</center>
+		</div>
+	</section>
+
+	<!--! ############################################################## Pseudoelementos ########################################################### -->
+	<section>
+		<div class="content">
+			<center>
+				<h1>Pseudoelementos</h1>
+			</center>
+			<p>Los Pseudoelementos no forman parte del DOM. Algunos pseudoelementos son:</p>
+			<ul>
+				<li>::first-line</li>
+				<li>::first-letter</li>
+				<li>::placeholder </li>
+				<li>::after</li>
+				<li>::before</li>
+				<li>::selection</li>
+			</ul>
+			<h2>::first-line</h2>
+			<!--! first-line  -->
+			<p>solo se aplica a elementos en bloque o inline-block y lo que hace esta propiedas solo se aplica a la
+				primera linea del texto.</p>
+			<div class="primero">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam ducimus culpa, ex ea deserunt iste?
+				Obcaecati, laborum reprehenderit! Sunt eos pariatur laboriosam labore porro magnam possimus amet
+				corporis ad.
+			</div>
+			<h2>::first-letter</h2>
+			<!--! first-letter -->
+			<p>solo se aplica a elementos en bloque o inline-block y lo que hace esta propiedas solo se aplica a la
+				primera letra del texto.</p>
+			<div class="segundo">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam ducimus culpa, ex ea deserunt iste?
+				Obcaecati, laborum reprehenderit! Sunt eos pariatur laboriosam labore porro magnam possimus amet
+				corporis ad.
+			</div>
+			<h2>::before (el contenido se agrega antes)</h2>
+			<!--! ::before -->
+			<p>Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este
+				elemento se muestra en línea con el texto de forma predeterminada.</p>
+			<b>Mundo </b>
+			<h2>::after (el contenido se agrega despues)</h2>
+			<!--! ::after -->
+			<p>Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este
+				elemento se muestra en línea con el texto de forma predeterminada.</p>
+			<b>Hola</b>
+		</div>
+	</section>
+	<!--! ############################################################## Pseudoelementos ########################################################### -->
+	<section>
+		<div class="content">
+			<center>
+				<h1>Pseudoclases</h1>
+			</center>
+			<p>Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento
+				seleccionado. Por ejemplo, <strong>:hover</strong> </p>
+			<center><img src="img/pseudoclases.png" alt="" width="600px"></center>
+			<h2>:hover</h2>
+			<p>Cuando pasas el mouse por el elemento interactua con la propiedad :hover</p>
+			<div class="caja-01">
+				<p>Hola Mundo</p>
+			</div>
+			<h2>:a ctive</h2>
+			<p>Cuando activas o das click el elemento interactua con la propiedad :active</p>
+			<div class="caja-02">
+				<p>Hola Mundo</p>
+			</div>
+			<div class="caja-03">
+				<h2>:focus</h2>
+				<p>representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se
+					activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.
+				</p>
+				Ingresa tu nombre: <input type="text">
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

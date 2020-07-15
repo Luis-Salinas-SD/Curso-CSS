@@ -1,0 +1,215 @@
+body{
+	background:  #34495e ;
+	color: ivory;
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
+}
+h1, h2, h3{
+	font-weight: bold;
+	color: ivory;
+	font-size: 25px;
+}
+a{
+	color: lawngreen;
+	font-size: 1.5em;
+}
+.content{
+	font-size: 20px;
+	width: auto;
+	height: auto;
+	background:   #07b474 ;
+	opacity: .9;
+	color: black;
+	margin:15px;
+	padding: 10px 50px 10px 50px;
+	border-radius: 2%;
+	display: block;
+}
+/*! ------------------------------------------------------------------- Box Model ---------------------------------------------------------*/
+.box-model{
+	background:  #3498db;
+	color: ivory;
+	width: 100px;
+	height: 100px;
+	padding: 50px;
+	border: 10px solid blue;
+	margin: 50px;
+	display: inline flex;
+}
+/*!----------------------------------------------------------------- Metodología BEM -------------------------------------------------------*/
+    .field {
+        color: ivory;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+.contact-form__input{
+    margin: 0.5%;
+}
+.contact-form__input--active{
+    color: rgb(243, 116, 31);
+    margin: 0.5%;
+}
+/*!------------------------------------------------------------------- Posicionamiento -------------------------------------------------------*/
+.relative > div{
+	width: 100px;
+	height: 100px;
+}
+/*! relative */
+.caja1{
+	background:  #f5b041 ;
+}
+.caja2{
+	background:  #3498db ;
+	position: relative;
+	left: 100px;
+}
+.caja3{
+	background:  #f4f6f7 ;
+}
+.caja4{
+	background:  #ec7063 ;
+}
+.caja5{
+	background:  #283747 ;
+}
+/*!------------------------------------------------------------------------ absolute ----------------------------------------------------------*/
+.absolute > div{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+.caja1-a{
+	background:  #f5b041 ;
+}
+.caja2-a{
+	background:  #3498db ;
+}
+.caja3-a{
+	background:  #f4f6f7 ;
+	position: relative;
+}
+.caja4-a{
+	background:  #ec7063 ;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.caja5-a{
+	background:  #405469 ;
+	position: relative;
+}
+/*!---------------------------------------------------------------- fixed ----------------------------------------------------------------*/
+.fixed > div{
+	width: 100px;
+	height: 100px;
+	display: block;
+
+}
+.caja1-f{
+	background:  #f5b041 ;
+	position: fixed;
+	top: 0;
+	right: 150px;
+}
+.caja2-f{
+	background:  #3498db ;
+	position: sticky;
+	top: 0px;
+}
+.caja3-f{
+	background:  #f4f6f7 ;
+}
+.caja4-f{
+	background:  #ec7063 ;
+}
+.caja5-f{
+	background:  #405469 ;
+}
+/*!------------------------------------------------------------------ Display ------------------------------------------------------------------------*/
+
+.display{
+	display: inline;
+	background: rgb(122, 107, 221);
+	color: snow;
+}
+/*!--------------------------------------------------------------------- Overflow -------------------------------------------------------------------- */
+
+.overflow{
+	width: 200px;
+	height: 200px;
+	background: orange;
+}
+
+.auto{
+	overflow: auto;
+}
+
+.hidden{
+	overflow: hidden;
+}
+.scroll{
+	overflow: scroll;
+}
+
+/*!---------------------------------------------------------------------- Float ----------------------------------------------------------------------- */
+.cont{
+	background: rgb(238, 161, 19);
+	width: 650px;
+	padding: 10px;
+}
+
+.cont > img{
+	float: left;
+	margin: 10px;
+}
+/*!---------------------------------------------------------------------- Pseudoelementos -------------------------------------------------------------- */
+
+.primero::first-line{
+	color:yellow;
+	font-size: 1.5em;
+}
+.segundo::first-letter{
+	color: violet;
+	font-size: 5em;
+}
+b::before{
+	content: "Hola ";
+	color: rgb(228, 248, 44);
+}
+b::after{
+	content: " Cómo estan?";
+	color: darkred;
+}
+/*!---------------------------------------------------------------------- Pseudoclases ----------------------------------------------------------------- */
+.caja-01{
+	width: 200px;
+	height: 200px;
+	background: darkseagreen;
+	transition: background 1s, width 2s, height 3s;
+}
+.caja-01:hover{
+	background: deepskyblue;
+	width: 300px;
+	height: 300px;
+}
+
+.caja-02{
+	width: 100px;
+	height: 100px;
+	background: fuchsia;
+	transition: all 3s;
+}
+.caja-02:active{
+	background: goldenrod;
+	width: 90%;
+}
+
+.caja-03 > input{
+	background: green;
+	transition: 1s;
+	color: lawngreen;
+}
+input:focus{
+	background: orange;
+	color: ivory;
+}

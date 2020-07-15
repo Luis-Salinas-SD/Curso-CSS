@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+}
+body{
+    background:  #fbe8a6 ;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+    color:  #a04000 ;
+    font-size: 2em;
+}
+p{
+    font-size: 19px;
+    margin: 15px;
+    font-family: 'Playfair Display', serif;
+
+}
+pre{
+    background: #2c2c32;
+    color: orange;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    margin: 5px;
+}
+.txt{
+    background:  #ffcc80 ;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    width: auto;
+    height: 450px;
+}
+img{
+    float: left;
+    display: block;
+    margin: 10px 25px 10px 5px;
+}
+.cont{
+    background:  #ffcc40;
+    opacity: .8;
+    margin: 20px;
+    padding: 10px;
+}
+
+/*! Display-Flex */
+.flex-container-1{
+    display: flex;
+    background: #2c2c32;
+    flex-direction: row-reverse;
+}
+.flex-item-1{
+    background: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+/*! f======================================================= flex-direction ==================================================================== */
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-item{
+    background-color: coral;
+    color: cornsilk;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+
+/*! f======================================================= flex-direction ==================================================================== */
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*! f======================================================= flex-Flow ========================================================================= */
+.flex-flow{
+    display: flex;
+flex-flow: row-reverse wrap;
+}
+/*! f======================================================= just-content ====================================================================== */
+.just-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*! f================================================= align-item  & align-content ============================================================== */
+.align-item{
+    background: #8B0000;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.align-content{
+        display: flex;
+
+}
+/*& =======================================================  Flex---items ====================================================================== */
+
+.flex-contenedor{
+    background: brown;
+    height: 750px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-iteem{
+    background: #FFA07A;
+    color: black;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+}
+.orange{
+    background: orange;
+}
+.green{
+    background: green;
+    align-self: center;
+}
+
+/*& =======================================================  Flex---grow ====================================================================== */
+.flex-contenedor-grow{
+    background: brown;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-iteem{
+    background: #FFA07A;
+    color: black;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+}
+.grow{
+   /*  flex-grow: 1; */
+}
+.orangee{
+    flex-grow: 3;
+    background: orange;
+}
+.greenn{
+    flex-grow: 1;
+    background: green;
+}
+.pinkk{
+    flex-grow: 9;
+    background: pink;
+}
+
+/*& =======================================================  Flex---basis ====================================================================== */
+
+.flex-contenedor-basis{
+    background: brown;
+    height: 200px;
+    display: flex;
+}
+.flex-iteem-basis{
+    background: #FFA07A;
+    color: black;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+}
+.orange-basis{
+    background: orange;
+    flex-basis: 300px;
+}
+.green-basis{
+    background: green;
+}
+.pink-basis{
+    background: pink;
+}
+
+/*& =======================================================  Flex----Shrink ====================================================================== */
+
+.flex-contenedor-s{
+    background: rgb(236, 81, 81);
+    height: 200px;
+    display: flex;
+}
+.flex-iteem-s{
+    background: #FFA07A;
+    color: black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.orange-s{
+    background: rgb(241, 186, 82);
+    flex-shrink: 3;
+}
+.green-s{
+    background: green;
+}
+.pink-s{
+    background: pink;
+}

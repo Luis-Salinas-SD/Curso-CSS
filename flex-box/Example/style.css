@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+body{
+    background:  #17202a ;
+    color:  #58d68d ;
+}
+
+}
+img{
+    border-radius: 50%;
+    margin: 10px;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 100px;
+    background:  #2c3e50 ;
+    padding: 30px;
+    border: #58d68d solid 1px;
+    max-width: 2000px;
+}
+.form{
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 10;
+}
+.form__input{
+    width: 70%;
+    padding: 7px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 3px solid  palegreen;
+    background: transparent;
+    color: #58d68d;
+    font-size: 1.5em;
+}
+.form__input:focus{
+    background: linear-gradient(to top, transparent,  #1d8348 );
+    color: #58d68d;
+    outline: none;
+    border-radius: 5px;
+    padding: auto;
+}
+.form textarea{
+    min-height: 100px;
+    resize: none;
+}
+.form-img{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 800px;
+    order: 5;
+}
+.form-img img{
+    width: 60%;
+    margin: auto;
+}
+
+/*# Seleccion por atributo  */
+.form input[type="submit"]{
+    background: #48a770;
+    color: white;
+    border-bottom: none;
+    padding: 12px;
+}
+.form input[type="submit"]:hover{
+    background: #58d68d;
+    color: white;
+    border-bottom: none;
+    padding: 12px;
+}

@@ -7,9 +7,9 @@
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    color: #538fff;
+    color: #ffeae4;
     background: hsl(220, 13%, 18%);
-    width: 25%;
+    width: 45%;
     margin: 15px;
 }
 body{
@@ -23,6 +23,9 @@ h3{
 }
 p{
     color: #1C2833;
+}
+b{
+    color: black;
 }
 .titular{
     background: #58D68D;
@@ -96,7 +99,6 @@ p{
 .item-r{
     border: 1px solid green;
 }
-
 /*$ ##########################################################  grid-auto  ######################################################### */
 .grid-container-a{
     display: grid;
@@ -107,4 +109,125 @@ p{
 }
 .item-a{
     border: 2px solid black;
+}
+/*$ ########################################################  grid-dinamico  ####################################################### */
+.container-dinamic{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2,100px);
+    background: chocolate;
+
+}
+.item-dinamic{
+    border: 1px solid white;
+    background: coral;
+}
+
+/*$ ##########################################################  alineacion  ######################################################### */
+.container-alinea{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-rows: repeat(3,150px);
+    background: chocolate;
+    justify-items: end;
+    align-items: start;
+
+}
+.item-alinea{
+    border: 1px solid white;
+    background: black;
+    font-size: 30px;
+    padding: 15px;
+
+}
+/*! ###########################  alineacion part 2 ############################ */
+
+.container-alinea-2{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,150px);
+    background: chocolate;
+    justify-content: space-evenly;/* eje horizontal */
+    align-content: space-evenly; /* eje vertical */
+    height: 800px;
+}
+.item-alinea-2{
+    border: 1px solid white;
+    background: black;
+    font-size: 30px;
+    padding: 15px;
+
+}
+/*! #########################  alineacion part 3 ############################# */
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,150px);
+    background: black;
+    justify-content: center;/* eje horizontal */
+    align-content: none; /* eje vertical */
+    height: 500px;
+}
+.item-alinea-3{
+    border: 1px solid blue;
+    background: rgb(94, 207, 151);
+    opacity: .8;
+    font-size: 30px;
+    padding: 15px;
+    color: blueviolet;
+}
+.item-alinea-3:nth-child(1){
+    color: brown;
+    align-self: end; /* eje horizontal */
+    justify-self: end; /* eje vertical */
+}
+
+/*$ ##########################################################  grid-area  ######################################################### */
+.grid-containerr{
+    background: #808B96;
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 70vh;
+    border: 5px solid black;
+
+}
+.grid-itemm{
+    padding: 20px;
+}
+.grid-header{
+    background: #5DADE2;
+    grid-area: header;
+}
+.grid-main{
+    background: #FF7043;
+    grid-area: main;
+}
+.grid-aside{
+    background: #27AE60;
+    grid-area: aside;
+
+}
+.grid-footer{
+    background: #c27746;
+    grid-area: footer;
+
+}
+/*$ ##########################################################  grid-line  ######################################################### */
+.grid-container-line{
+    background: #444;
+    display: grid;
+    grid-template-rows: repeat(3,200px);
+    grid-template-columns: repeat(3,200px);
+    color: white;
+}
+.grid-item-l{
+    border: 2px solid white;
+    background: hsl(220, 66%, 63%);
+
 }

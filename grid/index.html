@@ -75,7 +75,7 @@
             </div>
         </div>
     </section>
-    <!--$ ###################################################### Grid - Gap ########################################################### -->
+    <!--$ ###################################################### Grid - Gap ########################################################## -->
     <section>
         <div class="panel">
             <center>
@@ -96,7 +96,7 @@
             </div>
         </div>
     </section>
-    <!--$ #####################################################  Asignación de Espacios  ############################################## -->
+    <!--$ #####################################################  Asignación de Espacios  ############################################# -->
     <section>
         <div class="panel">
             <center>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    <!--$ #####################################################  repeat  ##################################################### -->
+    <!--$ #########################################################  repeat  ######################################################### -->
     <section>
         <div class="panel">
             <center>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </section>
-    <!--$ #####################################################  Grid implicito y explicito  ##################################################### -->
+    <!--$ ###############################################  Grid implicito y explicito  ############################################### -->
     <section>
         <div class="panel">
             <center>
@@ -162,13 +162,11 @@
             <h3>grid explicito</h3>
             <img src="img/explicit.jpg" alt="">
             <h3>grid-auto</h3>
-            <p>recibe 3 propiedades.</p> <br>
-            <h4>grid-auto-rows:</h4>
-            <p>repeat(filas, tamaño)</p>
-            <h4>grid-auto-columns:</h4>
-            <p>repeat(filas, tamaño)</p>
-            <h4>grid-auto-flow:</h4>
-            <p> px, fr, em <b style="color: red;">el valor "dense" ayuda a rellener los huecos vacios.</b></p>
+            <p>cabe resltar que esta propiedad se utiliza solo cuando el modelo es un grid implicito.</p> <br>
+            <h4>grid-auto-rows:<b>[tamaño]</b></h4>
+            <h4>grid-auto-columns:<b>[tamaño]</b></h4>
+            <h4>grid-auto-flow: <b>[px, fr, em, <b style="color: red;">el valor <b>"dense"</b> ayuda a rellener los
+                        huecos vacios.</b>]</b> </h4>
             <div class="grid-container-a">
                 <div class="item-a">1</div>
                 <div class="item-a">2</div>
@@ -189,17 +187,187 @@
 
         </div>
     </section>
-    <!--$ #####################################################  -  ##################################################### -->
-    <!-- <section>
+    <!--$ #####################################################  Grid - Dinamico  #################################################### -->
+    <section>
         <div class="panel">
-            <center><h2>Titulo</h2></center>
-            <h3>Subtitulo</h3>
+            <center>
+                <h2>Grid Dinamico</h2>
+            </center>
+            <p>Estos valores van dentro del <b>repat()</b></p>
+            <h3>minmax( ) <b>= sirve para declarar un tamaño minimo y maximo a los elemtnos</b></h3>
+            <code class="code">
+                grid-template-columns: repeat(5, minmax(100px, 500px)); <br>
+                grid-template-rows: repeat(3,minmax(100px, 500px));
+            </code>
+            <h3>min-content <b>= este es un valor que va en repeat, y sirve para establecer el tamaño minimo de acuerdo
+                    al contenido del item o elemento</b></h3>
+            <code class="code">
+                grid-template-columns: repeat(5, min-content); <br>
+                grid-template-rows: repeat(3,min-content);
+            </code>
+            <h3>max-content <b>= este es un valor que va en repeat, y sirve para establecer el tamaño maximo de acuerdo
+                    al contenido del item o elemento</b></h3>
+            <code class="code">
+                grid-template-columns: repeat(5, max-content); <br>
+                grid-template-rows: repeat(3, max-content);
+            </code>
+            <center>
+                <h3>Cantidades</h3>
+            </center>
+            <h3>auto-fill <b>lo que hace es ajustar las columnas de acuerdo al ancho del contenedor (esta propiedad
+                    funciona si minmax(###px,###px) esta declarada)</b></h3>
+            <h3>auto-fit <b>funciona similar a auto-fill, solo que este rellene por completo la fila para cada elemento,
+                    este se aprecia mejor cuando hay menos elementos en la fila como 2 o 4</b></h3>
+            <div class="container-dinamic">
+                <div class="item-dinamic">1 elemento</div>
+                <div class="item-dinamic">2 elemento</div>
+                <div class="item-dinamic">3 Lorem ipsum dolor sit amet</div>
+                <div class="item-dinamic">4 elemento</div>
+                <!-- <div class="item-dinamic">5</div>
+                <div class="item-dinamic">6</div>
+                <div class="item-dinamic">7</div>
+                <div class="item-dinamic">8</div>
+                <div class="item-dinamic">9</div>
+                <div class="item-dinamic">10</div>
+                <div class="item-dinamic">11</div>
+                <div class="item-dinamic">12</div> -->
+            </div>
         </div>
-    </section> -->
-    <!--$ #####################################################  -  ##################################################### -->
+    </section>
+    <!--$ ############################################  Alineacion en GRID ############################################## -->
+    <section>
+        <div class="panel">
+            <center>
+                <h2>Alineacion grid</h2>
+            </center>
+            <h3>alineacion de elementos (items).</h3>
+
+            <p>Las siguientes Propiedades alinean los elementos y van posicionadas en el contenedor.</p>
+            <h3>justify-items <b> [start | end | center | stretch;] </b></h3>
+            alinea los elementos en el eje horizontal
+            <h3>align-items: <b> [start | end | center | stretch;] </b></h3>
+            alinea los elementos en el eje vertical
+            <div class="container-alinea">
+                <div class="item-alinea">1</div>
+                <div class="item-alinea">2</div>
+                <div class="item-alinea">3</div>
+                <div class="item-alinea">4</div>
+                <div class="item-alinea">5</div>
+                <div class="item-alinea">6</div>
+                <div class="item-alinea">7</div>
+                <div class="item-alinea">8</div>
+                <div class="item-alinea">9</div>
+            </div>
+            <h3>alineacion de filas y columnas</h3>
+            <h3>align-content: <b>start | end | center | stretch | space-around | space-between | space-evenly;</b>
+                <p>posiciona las columnas (horizontal).</p>
+            </h3>
+            <h3>align-content: <b>start | end | center | stretch | space-around | space-between | space-evenly;</b>
+                <p>posiciona las filas. (vertical)</p>
+            </h3>
+            <p>Estas propiedades tambien son declaradas en el contenedor</p>
+
+            <div class="container-alinea-2">
+                <div class="item-alinea">1</div>
+                <div class="item-alinea-2">2</div>
+                <div class="item-alinea-2">3</div>
+                <div class="item-alinea-2">4</div>
+                <div class="item-alinea-2">5</div>
+                <div class="item-alinea-2">6</div>
+                <div class="item-alinea-2">7</div>
+                <div class="item-alinea-2">8</div>
+                <div class="item-alinea-2">9</div>
+            </div>
+            <br>
+            <center>
+                <h3>alineacion de los elementos dentro del item</h3>
+            </center>
+            <p>Hay que tener en cuenta que las siguientes propiedades ahora son declaradas en el <b>elemento</b> y no en
+                el contenedor</p>
+            <h3>align-self: <b>start | end | center | stretch;</b></h3>Eje horizontal
+            <h3>justify-self: <b>start | end | center | stretch;</b></h3>Eje vertical
+            <br><br>
+            <b> En el siguiente ejemplo se ha modificado el elemento con el numero 1
+            </b>
+
+            <div class="main-container">
+                <div class="item-alinea-3">1</div>
+                <div class="item-alinea-3">2</div>
+                <div class="item-alinea-3">3</div>
+                <div class="item-alinea-3">4</div>
+                <div class="item-alinea-3">5</div>
+                <div class="item-alinea-3">6</div>
+                <div class="item-alinea-3">7</div>
+                <div class="item-alinea-3">8</div>
+                <div class="item-alinea-3">9</div>
+            </div>
+        </div>
+
+    </section>
+    <!--$ ############################################    Grid Areas   ############################################## -->
+    <section>
+        <div class="panel">
+            <center><h2>Grid Area</h2></center>
+            <h3>  grid-template-areas: [] </h3>
+            a traves de una breve estructura como la que se muestra a continuacion se define el grid-area
+            <code class="code">
+                grid-template-areas: <br>
+                "header header header"<br>
+                "main main aside" <br>
+                "main main aside" <br>
+                "footer footer footer"; <br>
+                .grid-itemm{
+                    padding: 20px;
+                } <br>
+                .grid-header{
+                    background: #5DADE2;
+                    grid-area: header;
+                } <br>
+                .grid-main{
+                    background: #FF7043;
+                    grid-area: main;
+                } <br>
+                .grid-aside{
+                    background: #27AE60;
+                    grid-area: aside;
+
+                } <br>
+                .grid-footer{
+                    background: #c27746;
+                    grid-area: footer;
+                } <br>
+            </code>
+            <div class="grid-containerr">
+                <div class="grid-itemm grid-header">Header</div>
+                <div class="grid-itemm grid-main">Main</div>
+                <div class="grid-itemm grid-aside" >Aside</div>
+                <div class="grid-itemm grid-footer">footer</div>
+
+            </div>
+        </div>
+    </section>
+    <!--$ ############################################ Nombrar Grid Lines  ############################################## -->
+    <section>
+        <div class="panel">
+            <center><h2> Nombrar Grid Lines</h2></center>
+            <h3>Subtitulo</h3>
+            <div class="grid-container-line">
+                <div class="grid-item-l">1</div>
+                <div class="grid-item-l">2</div>
+                <div class="grid-item-l">3</div>
+                <div class="grid-item-l">4</div>
+                <div class="grid-item-l">5</div>
+                <div class="grid-item-l">6</div>
+                <div class="grid-item-l">7</div>
+                <div class="grid-item-l">8</div>
+                <div class="grid-item-l">9</div>
+            </div>
+        </div>
+    </section>
+    <!--$ ############################################ Nombrar Grid Lines  ############################################## -->
     <!-- <section>
         <div class="panel">
-            <center><h2>Titulo</h2></center>
+            <center><h2>Alineacion grid</h2></center>
             <h3>Subtitulo</h3>
         </div>
     </section> -->

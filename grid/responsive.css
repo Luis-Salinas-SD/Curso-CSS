@@ -1,0 +1,19 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background: black;
+    color: blanchedalmond;
+}
+.model{
+    background: #093f63;
+    color: #c3ddd3;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+}
+.model > h1, h2{
+    color: #84f0c7;
+    text-align: center;
+}

@@ -11,9 +11,20 @@ body{
     width: auto;
     height: auto;
     margin: 10px;
-    padding: 5px;
+    padding: 15px;
 }
 .model > h1, h2{
     color: #84f0c7;
     text-align: center;
+}
+/*# ------------------------------------------------------------------ Responsive Design -------------------------------------------------------------------------------------- */
+.div-responsive{
+    background: #2b832b;
+    margin: 5px;
+    padding: 5px;
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+.div-responsive{
+    background: rgba(114, 231, 235, 0.603);
+}
 }

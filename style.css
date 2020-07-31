@@ -303,3 +303,31 @@ input:focus {
 .caja-t:nth-child(5) {
 	transition-timing-function: ease-in-out;
 }
+
+/*!---------------------------------------------------------------------- Variabless ----------------------------------------------------------------- */
+
+:root{
+	--variable-pink: #f8f /*# <- Esto es una variable global */
+}
+
+.container-v-1{
+	padding: 30px;
+	height: 100px;
+	width: 100px;
+	background: var(--variable-pink); /*# <- se manda llamara una variable de la siguiente forma: var( --variable ) */
+	text-align: center;
+	margin: 15px;
+}
+.container-v-2{
+	--variable-local: rgb(78, 78, 202); /*! <- Esto es una variable local */
+	padding: 30px;
+	height: 100px;
+	width: 100px;
+	background: var(--variable-local); /*! <- se manda llamara una variable de la siguiente forma: var( --variable ) */
+	text-align: center;
+	margin: 15px;
+}
+
+
+
+
